@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="typed.js"></script>
+    <link href="http://fonts.cdnfonts.com/css/nitti" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body bgcolor="black">
+    <script>
+  $(function(){
+      $(".element").typed({
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 0
+      });
+  });
+</script>
+
+<div class="element"></div>
+<p class="css-typing"><span class="purple">class</span> <span class="green">Network</span>(object):<br><br><span class="purple">def</span><span class="blue">__init__</span>(<span class="purple">self</span>, *args, **kwargs):<br> <span class="red"># ...yada yada, initialize weights and bieses...</span></p>
+<p class="css-typing"><span class="purple">def</span> <span class="blue">feedforward</span>(<span class="purple">self</span>, a):<br> """Return the output of the network for an input vector a"""<br><span class="purple">for</span> b, w in zip(<span class="purple">self</span>.biases, <span class="purple">self</span>.weights):<br> a = sigmoid(np.dot(w, a )+b)<br><span class="purple">return<span> a</p>
+<style media="screen">
+  @import url('http://fonts.cdnfonts.com/css/nitti');
+  p{
+    font-family: 'Nitti', sans-serif;
+  }
+  .red{
+    color: #E23428;
+  }
+  .purple{
+    color: #A85DC9;
+  }
+  .blue{
+    color: #1F1FDA;
+  }
+  .green{
+    color: #83F90C;
+  }
+  .css-typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 2s steps(30, end);
+    color: white;
+}
+
+
+@keyframes type{
+    from { width: 0; }
+}
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+</style>
+  </body>
+</html>
